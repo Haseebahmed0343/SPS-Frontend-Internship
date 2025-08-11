@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Nepra</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-papmY+...your-integrity-key..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #logo {
+            width: 25%;
+            height: 5%;
+            margin: 7px;
+        }
+
+        #logo2 {
+            width: 500px;
+            margin: 7px;
+        }
+
+        #nav {
+            background-color: rgb(4, 28, 74);
+            z-index: 50;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav" class="flex items-center justify-between px-1 fixed top-0 left-0 w-full">
+        <img id="logo" src="https://nepra.spsnet.com/assets/images/logo-white.png" alt="logo" class="mx-2" />
+        <ul class="flex text-white space-x-12 items-center text-2l">
+            <li><a class="text-blue-600" href="index.html">Home</a></li>
+
+            <li class="relative group">
+                <button
+                    class="flex items-center text-white hover:text-blue-600 font-medium transition duration-300 ease-in-out focus:outline-none">
+                    Products
+                    <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <div
+                    class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out transform -translate-y-2 z-20">
+                    <a href="Kaspersky.html"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Kaspersky</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Tenable</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Microsoft</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Fortinet</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Trend
+                        Micro</a>
+                </div>
+            </li>
+            <li class="relative group">
+                <button
+                    class="flex items-center text-white hover:text-blue-600 font-medium transition duration-300 ease-in-out focus:outline-none">
+                    Services
+                    <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <div
+                    class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out transform -translate-y-2 z-20">
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Security
+                        Policy Management for IT and OT assets</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Security
+                        Controls Implementation and Improvement</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Security
+                        Risk Vulnerability Assessment</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Data
+                        Management</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Audit
+                        and Risk Assessment</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Monitoring
+                        and Incident Response</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Awareness
+                        and Training</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Regulatory
+                        Reporting</a>
+                </div>
+            </li>
+            <li class="relative group">
+                <button
+                    class="flex items-center text-white hover:text-blue-600 font-medium transition duration-300 ease-in-out focus:outline-none">
+                    Pricing
+                    <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <div
+                    class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out transform -translate-y-2 z-20">
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Basic
+                        Plan</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Standard
+                        Plan</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Premium
+                        Plan</a>
+                </div>
+            </li>
+            <li class="relative group">
+                <button
+                    class="flex items-center text-white hover:text-blue-600 font-medium transition duration-300 ease-in-out focus:outline-none">
+                    Activities
+                    <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <div
+                    class="absolute left-0 mt-3 w-48 bg-white border border-gray-100 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out transform -translate-y-2 z-20">
+                    <ul class="flex flex-col py-1">
+                        <li class="relative">
+                            <div class="group/webinar">
+                                <a href="#"
+                                    class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">
+                                    Webinar
+                                    <svg class="ml-2 w-4 h-4 text-gray-500 transform group-hover/webinar:rotate-90 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+
+                                <div
+                                    class="absolute top-0 left-full mt-0 ml-2 w-48 bg-white border border-gray-100 rounded-lg shadow-xl opacity-0 invisible group-hover/webinar:opacity-100 group-hover/webinar:visible group-hover/webinar:translate-x-0 transition-all duration-300 ease-in-out transform translate-x-2 z-30">
+                                    <ul class="py-1">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Achieving
+                                                NEPRA Cybersecurity Compliance With
+                                                Kaspersky
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="relative group">
+                <button
+                    class="flex items-center text-white hover:text-blue-600 font-medium transition duration-300 ease-in-out focus:outline-none">
+                    About Us
+                    <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <div
+                    class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out transform -translate-y-2 z-20">
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Contact
+                        Us</a>
+                    <a href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200 ease-in-out">Jobs</a>
+                </div>
+            </li>
+            <li>
+                <button
+                    class="border-2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out shadow-md hover:shadow-lg mx-2">
+                    Login to CSM
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <header class="flex bg-blue-950 h-80 mt-16">
+        <div class="container text-white flex flex-col justify-center">
+            <h1 class="text-4xl p-4 font-bold">NEPRA Compliance as a Service</h1>
+            <h2 class="text-2xl p-4 font-bold">
+                Empowering the Power Sector to Comply with NEPRA Cyber Security
+                Regulations.
+            </h2>
+            <p class="p-4">
+                We safeguard Pakistan's power generation, transmission, and
+                distribution sectors with expert cybersecurity consulting and systems
+                integration, ensuring compliance with NEPRA's regulations.
+            </p>
+        </div>
+        <div class="container flex flex-col items-center mt-5">
+            <div class="container">
+                <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Choose a Plan</h1>
+            </div>
+            <!-- cards container -->
+            <div class="container flex space-x-5 justify-center">
+                <div class="card bg-base-100 w-40 h-50 shadow-sm">
+                    <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title text-2xl">Basic</h2>
+                        <p class="mt-5 text-xl">$1k/month</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-40 h-50 shadow-sm">
+                    <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title text-2xl">Standard</h2>
+                        <p class="mt-5 text-xl">$3k/month</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-40 h-50 shadow-sm">
+                    <div class="card-body flex flex-col items-center">
+                        <h2 class="card-title text-2xl">Premium</h2>
+                        <p class="mt-5 text-xl">Custom</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="marquee p-1">
+        <div class="marquee-content">
+            <a href="#" target="_blank" class="text-grey text-xl">
+                Join our webinar: Achieving NEPRA Cybersecurity Compliance with Kaspersky
+            </a>
+        </div>
+    </div>
+    <main class="mt-1 p-1 grid gap-1">
+        <div class="grid gap-1">
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Security Policy Management for IT and OT assets as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-60">
+                    <div class="p-4">
+                        <h1 class="text-xl">Security Policy Management for IT and OT assets</h1>
+                        <p>Security Policy Management as a service (SPMaaS) is designed to help organizations establish
+                            robust security frameworks tailored to their IT and OT environments. We assist in crafting
+                            comprehensive policies, manuals, and standard operating procedures that align with
+                            regulatory
+                            standards and industry best practices. Regular reviews and updates ensure your policies
+                            evolve
+                            to address emerging threats and vulnerabilities. By enhancing governance, risk management,
+                            and
+                            operational effectiveness, we empower your organization to maintain compliance, protect
+                            critical
+                            assets, and foster a culture of proactive cybersecurity. <a class="text-blue-800"
+                                href="">Learn
+                                More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Security Controls Implementation and Improvement as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-60">
+                    <div class="p-4">
+                        <h1 class="text-xl">Security Controls Implementation and Improvement</h1>
+                        <p>SPS’s Security Controls Implementation and Improvement as a Service ensures robust protection
+                            for IT and OT assets in line with NEPRA cybersecurity policies. We establish and enhance
+                            access management, network security, encryption, intrusion detection, and traceability
+                            controls. Additionally, we provide secure remote and physical access protocols, regular data
+                            backups, and proactive identity theft prevention. Through continuous monitoring and employee
+                            training, we help safeguard critical infrastructure while ensuring compliance and
+                            operational resilience.<a class="text-blue-800" href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Security Risk Vulnerability Assessment as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-50">
+                    <div class="p-4">
+                        <h1 class="text-xl">Security Risk Vulnerability Assessment</h1>
+                        <p>SPS’s Data Management as a Service ensures the accuracy, security, and authenticity of your
+                            critical data in compliance with NEPRA regulations. We implement strict access controls,
+                            validate data integrity, and safeguard sensitive information, enabling authorized access and
+                            ensuring seamless, secure data exchange within the power sector. <a class="text-blue-800"
+                                href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Data Management as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-40">
+                    <div class="p-4">
+                        <h1 class="text-xl">Data Management</h1>
+                        <p>Managing your data effectively is crucial for security, compliance, and operational
+                            efficiency. we offer Data Management as a Service to help you secure, manage, and leverage
+                            your data in line with regulatory requirements and industry best practices. <a
+                                class="text-blue-800" href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Audit and Risk Assessment as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-40">
+                    <div class="p-4">
+                        <h1 class="text-xl">Audit and Risk Assessment</h1>
+                        <p>SPS’s Audit and Risk Assessment as a Service ensures compliance with NEPRA regulations by
+                            conducting specialized audits and risk evaluations. We assess vulnerabilities, review
+                            interconnections between power sector stakeholders, and provide insights to manage risks and
+                            ensure regulatory alignment. <a class="text-blue-800" href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Monitoring and Incident Response as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-50">
+                    <div class="p-4">
+                        <h1 class="text-xl">Monitoring and Incident Response</h1>
+                        <p>SPS’s Monitoring and Incident Response as a Service ensures continuous monitoring of IT and
+                            OT systems, rapid response to security incidents, and compliance with NEPRA regulations. We
+                            implement proactive security controls, incident management plans, and log management to
+                            detect and address vulnerabilities promptly, safeguarding your critical infrastructure. <a
+                                class="text-blue-800" href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Awareness and Training as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-60">
+                    <div class="p-4">
+                        <h1 class="text-xl">Awareness and Training</h1>
+                        <p>SPS’s Awareness and Training as a Service equips your organization with essential
+                            cybersecurity knowledge, focusing on risk mitigation, compliance, and secure IT and OT asset
+                            management. We offer comprehensive training on roles, responsibilities, legal requirements,
+                            user authentication, and dispute resolution, ensuring your team is prepared to handle
+                            evolving security threats and stay compliant with regulatory standards. <a
+                                class="text-blue-800" href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer overflow-hidden rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-between border-b-2 border-blue-950 bg-blue-950 p-4 text-white transition-colors duration-300 group-hover:bg-blue-800">
+                    Regulatory Reporting as a Services
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 rotate-45 transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div
+                    class="max-h-0 overflow-hidden bg-white text-black transition-all duration-300 ease-in-out group-hover:max-h-60">
+                    <div class="p-4">
+                        <h1 class="text-xl">Regulatory Reporting and Communications</h1>
+                        <p>Regulatory Reporting as a Service ensures your organization meets all compliance requirements
+                            by providing a structured approach to reporting cybersecurity incidents and security
+                            breaches to the relevant authorities. Our service includes timely submission of detailed
+                            breach reports, including impact assessments on business operations, IT and OT assets, and
+                            users. We help establish a standardized mechanism for incident reporting, ranking, and using
+                            the appropriate tools, in consultation with PowerCert, ensuring all breaches are reported to
+                            the Authority within 72 hours and on a quarterly basis thereafter. <a class="text-blue-800"
+                                href="">Learn More></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="max-w-6xl mx-auto px-4 mt-2">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center">
+                <!-- Partner Logo -->
+                <a href="https://nepra.spsnet.com/tech-provider/kaspersky/"
+                    class="transform transition duration-300 hover:scale-110">
+                    <img src="https://nepra.spsnet.com/assets/images/tech-provider/ksp.png" alt="Kaspersky"
+                        class="h-12 mx-auto" />
+                </a>
+                <a href="https://nepra.spsnet.com/tech-provider/tenable/"
+                    class="transform transition duration-300 hover:scale-110">
+                    <img src="https://nepra.spsnet.com/assets/images/tech-provider/teng.png" alt="Tenable"
+                        class="h-12 mx-auto" />
+                </a>
+                <a href="https://nepra.spsnet.com/tech-provider/microsoft/"
+                    class="transform transition duration-300 hover:scale-110">
+                    <img src="https://nepra.spsnet.com/assets/images/tech-provider/micro.png" alt="Microsoft"
+                        class="h-12 mx-auto" />
+                </a>
+                <a href="https://nepra.spsnet.com/tech-provider/fortinet/"
+                    class="transform transition duration-300 hover:scale-110">
+                    <img src="https://nepra.spsnet.com/assets/images/tech-provider/for.png" alt="Fortinet"
+                        class="h-12 mx-auto" />
+                </a>
+                <a href="https://nepra.spsnet.com/tech-provider/trend-micro/"
+                    class="transform transition duration-300 hover:scale-110">
+                    <img src="https://nepra.spsnet.com/assets/images/tech-provider/trend.png" alt="Trend Micro"
+                        class="h-12 mx-auto" />
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-950 ">
+        <div class="container grid grid-cols-2 gap-30">
+            <div class="container m-10 max-w-7xl mx-auto px-4">
+                <a href="index.html">
+                    <img id="logo2" src="https://nepra.spsnet.com/assets/images/logo-white.png" alt="logo">
+                </a>
+                <p class="text-white mt-5">Software Productivity Strategists, Inc. (SPS) delivers AI and Cloud-powered
+                    industry solutions. With expertise across design, development, security, and operations, we build
+                    scalable, secure, and reliable systems. Our award-winning team includes IBM-certified inventors and
+                    global competition champions.</p>
+            </div>
+            <div class="container m-10 max-w-7xl mx-auto px-4 text-white">
+                <h3 class="text-2xl">Services</h3>
+                <ul class="grid gap-2 mt-2">
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Security Policy
+                            Management for IT and OT assets</li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Security Controls
+                            Implementation and Improvement</li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Security Risk
+                            Vulnerability Assessment</li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Data Management</li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Audit and Risk
+                            Assessment</li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Monitoring and Incident
+                            Response</li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Awareness and Training
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="hover:text-blue-600"><i class="fa-solid fa-angle-right"></i> Regulatory Reporting and
+                            Communications</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-white flex justify-center items-center  h-20">
+            Design & Developed By&nbsp;<a class="hover:text-blue-600 font-bold" href="https://spsnet.com/" target="_blank"> Software
+                Productivity
+                Strategists, Inc.</a>
+        </div>
+    </footer>
+</body>
+
+</html>
